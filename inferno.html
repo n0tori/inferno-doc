@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dante's Inferno Translations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dante's Inferno: A Comprehensive Resource</h1>
+    <p>Cantos 1-34 with translations by Henry Francis Cary (1814), Henry Wadsworth Longfellow (1867), and Charles Eliot Norton (1891).</p>
+    <p>Being the most popular of the three parts, the Inferno speaks for itself and functions as a complete work on its own, delivering a timeless, full narrative arc. <i>"Any attempt to summarize its philosophical content or significance is to a certain degree an act of folly."</i>
+        Rather than commit such folly, I defer to <a href="https://plato.stanford.edu/entries/dante/#ComDivCom">this</a> thoughtful and succinct examination from the Stanford Encyclopedia of Philosophy.
+    </p>
+    <div class="about-section">
+        <h2>About The Translations:</h2>
+        <h3>Cary's</h3>
+        <p>A background in studying French and Italian literature.
+            Written in blank verse.
+            One of the earliest complete English translations of the Commedia.
+            William Blake reportedly had thought Cary's translation to be "superior to all others".
+        </p>
+        <h3>Longfellow's</h3>
+        <p>American poet and professor of Italian at Harvard College. 
+            Written in blank tercets. First complete translation by an American author. 
+            Prior to writing, the formation of the "Dante Club" in order to study the literature included amongst the group: 
+            Charles Eliot Norton.
+        </p>
+        <h3>Norton's</h3>
+        <p>American author and professor of Art at Harvard College. 
+            First complete prose translation of the Commedia by an American author; 
+            departing from the conventional and also intrinsic poetic structure of the original text.
+        </p>
+    </div>
+    <div class="additional-study">
+        <h2>Additional Study:</h2>
+        <p>I came across these websites that offer neat resources and supplementary material to Dante, The Divine Comedy and Inferno.</p>
+        <p><a href="https://www.worldofdante.org/index.html">World of Dante</a> - A very comprehensive study resource of the material. A+ for its web design.</p>
+        <p><a href="https://danteworlds.laits.utexas.edu/">Danteworlds</a> - A very well-made interactive experience with unique commentary that is well worth reading.</p>
+        <p><a href="https://dante.dartmouth.edu/">Dartmouth Dante Project</a> - Searchable database of scholarly commentaries on the Divine Comedy.</p>
+        <p><a href="https://dantecomedy.com/welcome/glossary/">Dante Comedy</a> - A glossary/index of names & places in the Inferno. Contains a lot more tid bits of information that is missing from here.</p>
+        <p><a href="https://commons.wikimedia.org/wiki/Category:Gustave_Dor%C3%A9_-_Inferno">A Gallery of Inferno</a> - A collection of Gustave Doré's illustrations to accompany the Inferno.</p>
+    </div>
+
+    <p>All content on this page is in the public domain -
+        [<a href="https://www.gutenberg.org/ebooks/1008">1</a>],
+        [<a href="https://www.gutenberg.org/ebooks/1001">2</a>],
+        [<a href="https://www.gutenberg.org/ebooks/1995">3</a>].
+    </p>
+
+    <div class="nav">
+        <label>Jump to Canto: 
+            <select id="cantoSelect">
+                <option value="">Select Canto</option>
+            </select>
+        </label>
+        <button id="translationToggle" onclick="toggleTranslations()">Hide All Translations</button>
+        <button id="highlightToggle" onclick="toggleHighlighting()">Disable Highlighting</button>
+    </div>
+
+    <div id="cantos-container"></div>
+
+    <script src="cantos.js"></script>
+    <script src="cary.js"></script>
+    <script src="longfellow.js"></script>
+    <script src="norton.js"></script>
+    <script src="highlighting.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
